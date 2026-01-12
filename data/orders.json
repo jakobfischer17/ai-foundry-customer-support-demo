@@ -1,0 +1,368 @@
+[
+  {
+    "id": "ORD-001",
+    "customer_id": "CUST-101",
+    "customer_name": "Sarah Johnson",
+    "customer_email": "sarah.johnson@email.com",
+    "status": "shipped",
+    "created_at": "2024-01-15T10:30:00Z",
+    "updated_at": "2024-01-17T14:22:00Z",
+    "shipping_address": {
+      "street": "123 Main Street",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98101",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-001",
+        "product_name": "Ultra Hydrating Shampoo",
+        "quantity": 2,
+        "unit_price": 12.99
+      },
+      {
+        "product_id": "PROD-003",
+        "product_name": "Repair & Restore Conditioner",
+        "quantity": 1,
+        "unit_price": 13.99
+      }
+    ],
+    "subtotal": 39.97,
+    "shipping": 5.99,
+    "tax": 3.60,
+    "total": 49.56,
+    "tracking_number": "1Z999AA10123456784",
+    "carrier": "UPS",
+    "estimated_delivery": "2024-01-20"
+  },
+  {
+    "id": "ORD-002",
+    "customer_id": "CUST-102",
+    "customer_name": "Michael Chen",
+    "customer_email": "m.chen@email.com",
+    "status": "delivered",
+    "created_at": "2024-01-10T08:15:00Z",
+    "updated_at": "2024-01-14T16:45:00Z",
+    "shipping_address": {
+      "street": "456 Oak Avenue",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94102",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-004",
+        "product_name": "Fresh Spring Laundry Detergent",
+        "quantity": 1,
+        "unit_price": 18.99
+      },
+      {
+        "product_id": "PROD-015",
+        "product_name": "Fabric Softener Sheets",
+        "quantity": 2,
+        "unit_price": 8.99
+      }
+    ],
+    "subtotal": 36.97,
+    "shipping": 0.00,
+    "tax": 3.33,
+    "total": 40.30,
+    "tracking_number": "9400111899223387654321",
+    "carrier": "USPS",
+    "delivered_at": "2024-01-14T14:32:00Z"
+  },
+  {
+    "id": "ORD-003",
+    "customer_id": "CUST-103",
+    "customer_name": "Emily Rodriguez",
+    "customer_email": "emily.r@email.com",
+    "status": "processing",
+    "created_at": "2024-01-18T14:20:00Z",
+    "updated_at": "2024-01-18T14:20:00Z",
+    "shipping_address": {
+      "street": "789 Pine Street",
+      "city": "Denver",
+      "state": "CO",
+      "zip": "80202",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-010",
+        "product_name": "Daily Facial Cleanser",
+        "quantity": 1,
+        "unit_price": 16.99
+      },
+      {
+        "product_id": "PROD-011",
+        "product_name": "Hydrating Face Moisturizer SPF 30",
+        "quantity": 1,
+        "unit_price": 24.99
+      },
+      {
+        "product_id": "PROD-012",
+        "product_name": "Anti-Aging Night Cream",
+        "quantity": 1,
+        "unit_price": 34.99
+      }
+    ],
+    "subtotal": 76.97,
+    "shipping": 0.00,
+    "tax": 5.93,
+    "total": 82.90
+  },
+  {
+    "id": "ORD-004",
+    "customer_id": "CUST-104",
+    "customer_name": "David Thompson",
+    "customer_email": "d.thompson@email.com",
+    "status": "cancelled",
+    "created_at": "2024-01-12T09:45:00Z",
+    "updated_at": "2024-01-13T11:30:00Z",
+    "shipping_address": {
+      "street": "321 Elm Drive",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78701",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-018",
+        "product_name": "Dandruff Control Shampoo",
+        "quantity": 3,
+        "unit_price": 14.99
+      }
+    ],
+    "subtotal": 44.97,
+    "shipping": 5.99,
+    "tax": 3.71,
+    "total": 54.67,
+    "cancellation_reason": "Customer requested cancellation - found alternative product"
+  },
+  {
+    "id": "ORD-005",
+    "customer_id": "CUST-105",
+    "customer_name": "Jennifer Williams",
+    "customer_email": "j.williams@email.com",
+    "status": "shipped",
+    "created_at": "2024-01-16T16:00:00Z",
+    "updated_at": "2024-01-18T09:15:00Z",
+    "shipping_address": {
+      "street": "555 Maple Lane",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97201",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-020",
+        "product_name": "Organic Baby Shampoo",
+        "quantity": 2,
+        "unit_price": 12.99
+      },
+      {
+        "product_id": "PROD-009",
+        "product_name": "Natural Bar Soap - Oatmeal",
+        "quantity": 1,
+        "unit_price": 5.99
+      }
+    ],
+    "subtotal": 31.97,
+    "shipping": 5.99,
+    "tax": 0.00,
+    "total": 37.96,
+    "tracking_number": "9261290100130417659231",
+    "carrier": "USPS",
+    "estimated_delivery": "2024-01-22"
+  },
+  {
+    "id": "ORD-006",
+    "customer_id": "CUST-106",
+    "customer_name": "Robert Martinez",
+    "customer_email": "r.martinez@email.com",
+    "status": "pending",
+    "created_at": "2024-01-19T11:30:00Z",
+    "updated_at": "2024-01-19T11:30:00Z",
+    "shipping_address": {
+      "street": "888 Cedar Road",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip": "85001",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-006",
+        "product_name": "All-Purpose Surface Cleaner",
+        "quantity": 3,
+        "unit_price": 6.99
+      },
+      {
+        "product_id": "PROD-016",
+        "product_name": "Dish Soap - Original",
+        "quantity": 2,
+        "unit_price": 3.99
+      },
+      {
+        "product_id": "PROD-019",
+        "product_name": "Bathroom Cleaner Spray",
+        "quantity": 2,
+        "unit_price": 5.49
+      }
+    ],
+    "subtotal": 39.93,
+    "shipping": 5.99,
+    "tax": 3.65,
+    "total": 49.57,
+    "payment_status": "awaiting_payment"
+  },
+  {
+    "id": "ORD-007",
+    "customer_id": "CUST-107",
+    "customer_name": "Amanda Lee",
+    "customer_email": "amanda.lee@email.com",
+    "status": "delivered",
+    "created_at": "2024-01-05T13:45:00Z",
+    "updated_at": "2024-01-09T10:20:00Z",
+    "shipping_address": {
+      "street": "222 Birch Avenue",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60601",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-007",
+        "product_name": "Moisturizing Body Wash",
+        "quantity": 2,
+        "unit_price": 8.99
+      },
+      {
+        "product_id": "PROD-008",
+        "product_name": "Exfoliating Body Scrub",
+        "quantity": 1,
+        "unit_price": 14.99
+      },
+      {
+        "product_id": "PROD-014",
+        "product_name": "Intensive Hand Cream",
+        "quantity": 1,
+        "unit_price": 9.99
+      }
+    ],
+    "subtotal": 42.96,
+    "shipping": 0.00,
+    "tax": 4.51,
+    "total": 47.47,
+    "tracking_number": "789456123012345678",
+    "carrier": "FedEx",
+    "delivered_at": "2024-01-09T09:15:00Z"
+  },
+  {
+    "id": "ORD-008",
+    "customer_id": "CUST-108",
+    "customer_name": "Christopher Brown",
+    "customer_email": "c.brown@email.com",
+    "status": "refunded",
+    "created_at": "2024-01-08T10:00:00Z",
+    "updated_at": "2024-01-15T15:30:00Z",
+    "shipping_address": {
+      "street": "999 Walnut Street",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33101",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-005",
+        "product_name": "Sensitive Skin Laundry Detergent",
+        "quantity": 1,
+        "unit_price": 21.99
+      }
+    ],
+    "subtotal": 21.99,
+    "shipping": 5.99,
+    "tax": 1.54,
+    "total": 29.52,
+    "refund_reason": "Product caused skin irritation - full refund issued",
+    "refund_amount": 29.52,
+    "refund_date": "2024-01-15T15:30:00Z"
+  },
+  {
+    "id": "ORD-009",
+    "customer_id": "CUST-109",
+    "customer_name": "Lisa Garcia",
+    "customer_email": "l.garcia@email.com",
+    "status": "shipped",
+    "created_at": "2024-01-17T09:30:00Z",
+    "updated_at": "2024-01-18T16:00:00Z",
+    "shipping_address": {
+      "street": "444 Spruce Court",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-002",
+        "product_name": "Volume Boost Shampoo",
+        "quantity": 1,
+        "unit_price": 11.49
+      },
+      {
+        "product_id": "PROD-017",
+        "product_name": "Hair Styling Gel",
+        "quantity": 2,
+        "unit_price": 7.99
+      }
+    ],
+    "subtotal": 27.47,
+    "shipping": 5.99,
+    "tax": 2.97,
+    "total": 36.43,
+    "tracking_number": "1Z999BB20234567891",
+    "carrier": "UPS",
+    "estimated_delivery": "2024-01-21"
+  },
+  {
+    "id": "ORD-010",
+    "customer_id": "CUST-110",
+    "customer_name": "Kevin Wilson",
+    "customer_email": "k.wilson@email.com",
+    "status": "processing",
+    "created_at": "2024-01-19T08:00:00Z",
+    "updated_at": "2024-01-19T08:00:00Z",
+    "shipping_address": {
+      "street": "777 Aspen Way",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02101",
+      "country": "USA"
+    },
+    "items": [
+      {
+        "product_id": "PROD-013",
+        "product_name": "Antibacterial Hand Soap",
+        "quantity": 4,
+        "unit_price": 4.99
+      },
+      {
+        "product_id": "PROD-014",
+        "product_name": "Intensive Hand Cream",
+        "quantity": 2,
+        "unit_price": 9.99
+      }
+    ],
+    "subtotal": 39.94,
+    "shipping": 5.99,
+    "tax": 2.87,
+    "total": 48.80
+  }
+]
