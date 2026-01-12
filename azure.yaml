@@ -1,0 +1,39 @@
+# Azure Developer CLI configuration
+# Run 'azd up' to deploy all resources
+
+name: ai-foundry-customer-support
+metadata:
+  template: custom
+
+services:
+  api:
+    project: ./backend
+    host: containerapp
+    language: python
+    docker:
+      path: ./backend/Dockerfile
+      context: ./backend
+
+  web:
+    project: ./frontend
+    host: staticwebapp
+    language: ts
+    dist: dist
+    hooks:
+      prepackage:
+        run: npm run build
+        shell: sh
+        continueOnError: false
+
+infra:
+  provider: bicep
+  path: ./infra
+  module: main
+
+hooks:
+  postprovision:
+    shell: pwsh
+    run: |
+      # Set up environment variables for the frontend
+      $env:VITE_API_URL = $env:SERVICE_API_ENDPOINT
+      Write-Host "API URL configured: $env:VITE_API_URL"
